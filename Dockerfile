@@ -21,8 +21,6 @@ ADD server_linux_amd64 /server_linux_amd64
 ADD kcptunserver /kcptunserver
 ADD ss_config.json /ss_config.json
 ADD shadowsocks-server-linux64-1.1.5 /shadowsocks-server-linux64-1.1.5
-ADD ss-configcodeing.json /ss-configcodeing.json
-ADD kubeseil/* /
 RUN chmod +x /kcptunserver /server_linux_amd64 /shadowsocks-server-linux64-1.1.5
 RUN chmod +x /configure.sh
 ENTRYPOINT /configure.sh
