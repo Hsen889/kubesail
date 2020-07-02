@@ -1,0 +1,14 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: v2ray
+  labels:
+    app: myapp
+spec:
+  rules:
+    - host: v2ray.jaskon139.usw1.kubesail.org
+      http:
+        paths:
+          - backend:
+              serviceName: v2ray
+              servicePort: 8080
