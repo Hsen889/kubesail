@@ -22,7 +22,7 @@ spec:
               memory: 64Mi
             limits:
               cpu: 100m
-              memory: 256Mi
+              memory: 512Mi
           ports:
             - containerPort: 8080
           env:
